@@ -13,15 +13,16 @@ body {
     margin: 100px auto;
     background-color: #062d58;
     border-radius: 15px;
-    border:2px solid #062d58;
+    border: 2px solid #062d58;
 }
 
-#header-div {
+.header-div {
     background-color: #c7172c;
     height: 120px;
     max-width: 1100px;
     border-top-left-radius: 14px;
-    border-top-right-radius: 14px;;
+    border-top-right-radius: 14px;
+    ;
 }
 
 #fence-selection {
@@ -70,20 +71,7 @@ h1 {
     font-size: 16px;
 }
 
-/*Second Screen*/ 
-
-.container-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    max-width: 1100px;
-    height: 550px;
-    margin: 100px auto;
-    background-color: #062d58;
-    border-radius: 15px;
-    border:2px solid #062d58;
-}
+/*Second Screen*/
 
 .inner-fence-container {
     display: flex;
@@ -102,14 +90,65 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: flex-start;
     flex-basis: 62%;
+    padding-left: 7em;
+    padding-bottom: 2em;
+}
+
+#fence-length {
+    font-size: 22px;
+    color: white;
+    padding-bottom: 20px;
 }
 
 .img-class {
-    flex-basis:38%;
+    flex-basis: 38%;
 }
 
 .input-sort {
     display: flex;
+}
+
+
+.space-info {
+    padding: 20px 0px;
+}
+
+.color-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding-right: 10px;
+}
+
+.input-pad {
+    margin-right: 50px;
+}
+
+.box-sort {
+    width: 130px;
+    height: 20px;
+}
+
+#height {
+    width: 85px;
+}
+
+.select-sort {
+    height: 30px;
+}
+
+#calculate-btn {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: #062d58;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 130px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 6px grey inset;
+    font-size: 16px;
 }

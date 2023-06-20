@@ -1,94 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <div id="header-div">
-        <h1>Fencing Calculator</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="container">
+    <div class="header-div">
+      <h1>Fencing Calculator</h1>
+    </div>
+    <h2 id="fence-selection">Please select the type of fence</h2>
+    <div class="inner-container">
+      <div class="content-container">
+        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\picket.jpg" alt="Picket fencing"
+          class="img-size" />
+        <button class="button-size">
+          Picket <br />
+          Fencing
+        </button>
       </div>
-      <h2 id="fence-selection">Please select the type of fence</h2>
-      <div class="inner-container">
-        <div class="content-container">
-          <img
-            src="C:\Users\michael\Documents\Code\Calculator\images\picket.jpg"
-            alt="Picket fencing"
-            class="img-size"
-          />
-          <button class="button-size">
-            Picket <br />
-            Fencing
-          </button>
-        </div>
-        <div class="content-container">
-          <img
-            src="C:\Users\michael\Documents\Code\Calculator\images\horizontal.jpg"
-            alt="Horizontal hit and miss"
-            class="img-size"
-          />
-          <button class="button-size">Horizontal Hit and Miss</button>
-        </div>
-        <div class="content-container">
-          <img
-            src="C:\Users\michael\Documents\Code\Calculator\images\vertical.jpg"
-            alt="Vertical Hit and Miss"
-            class="img-size"
-          />
-          <button class="button-size">Vertical Hit <br />and Miss</button>
-        </div>
-        <div class="content-container">
-          <img
-            src="C:\Users\michael\Documents\Code\Calculator\images\panelwood.jpg"
-            alt="Panel Fence With Wood Posts"
-            class="img-size"
-          />
-          <button class="button-size">Panel Fence Wood Posts</button>
-        </div>
-        <div class="content-container">
-          <img
-            src="C:\Users\michael\Documents\Code\Calculator\images\panelconcrete.jpg"
-            alt="Panel Fence With Concrete Posts"
-            class="img-size"
-          />
-          <button class="button-size">Panel Fence Concrete Posts</button>
-        </div>
+      <div class="content-container">
+        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\horizontal.jpg"
+          alt="Horizontal hit and miss" class="img-size" />
+        <button class="button-size">Horizontal Hit and Miss</button>
+      </div>
+      <div class="content-container">
+        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\vertical.jpg"
+          alt="Vertical Hit and Miss" class="img-size" />
+        <button class="button-size">Vertical Hit <br />and Miss</button>
+      </div>
+      <div class="content-container">
+        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\panelwood.jpg"
+          alt="Panel Fence With Wood Posts" class="img-size" />
+        <button class="button-size">Panel Fence Wood Posts</button>
+      </div>
+      <div class="content-container">
+        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\panelconcrete.jpg"
+          alt="Panel Fence With Concrete Posts" class="img-size" />
+        <button class="button-size">Panel Fence Concrete Posts</button>
       </div>
     </div>
-    <div class="container-2">
-      <div id="header-div">
-        <h1>Fencing Calculator</h1>
-      </div>
-      <div class="inner-fence-container">
-        <div class="information-container">
-          <h3>Please enter length in meters or feet</h3>
-          <div class="input-sort">
-            <div>
-              <input
-                type="number"
-                placeholder="meters"
-                name="meters"
-                id="meters"
-              />
-              <label for="meters">Meters</label>
-            </div>
-            <div>
-              <input type="number" placeholder="feet" name="feet" id="feet" />
-              <label for="feet">Feet</label>
-            </div>
+  </section>
+  <section class="container">
+    <div class="header-div">
+      <h1>Fencing Calculator</h1>
+    </div>
+    <div class="inner-fence-container">
+      <div class="information-container">
+        <h3 id="fence-length">Please enter fence length in meters or feet</h3>
+        <div class="input-sort space-info">
+          <div>
+            <label for="meters" class="color-text">Meters</label>
+            <input type="number" placeholder="meters" name="meters" id="meters" class="input-pad box-sort" />
+
+          </div>
+          <div>
+            <label for="feet" class="color-text">Feet</label>
+            <input type="number" placeholder="feet" name="feet" id="feet" class="input-pad box-sort" />
+
           </div>
         </div>
-        <div class="img-class">
-          <img
-            src="C:\Users\michael\Documents\Code\Calculator\images\picket.jpg"
-            alt="picket fencing"
-            id="fence-img"
-          />
+        <div class="input-sort">
+          <div class="space-info">
+            <label for="height" class="color-text">Fence Height</label>
+            <select id="height" class="input-pad select-sort">
+              <option value="3ft">3ft High</option>
+              <option value="4ft">4ft High</option>
+              <option value="6ft">6ft High</option>
+            </select>
+          </div>
+          <div class="space-info">
+            <label for="spacing" class="color-text">Picket Spacing</label>
+            <select id="spacing" class="input-pad select-sort">
+              <option value="5mm">5mm</option>
+              <option value="3/4">3/4"</option>
+            </select>
+          </div>
         </div>
+        <input type="button" value="Calculate" id="calculate-btn" name="calculate-btn">
+      </div>
+      <div class="img-class">
+        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\picket.jpg" alt="picket fencing"
+          id="fence-img" />
       </div>
     </div>
-  </body>
+  </section>
+  <section class="container">
+    <div class="header-div">
+      <h1>Fencing Calculator</h1>
+    </div>
+  </section>
+</body>
+
 </html>
