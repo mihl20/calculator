@@ -19,9 +19,9 @@ body {
 #header-div {
     background-color: #c7172c;
     height: 120px;
-    width: 1100px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;;
+    max-width: 1100px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;;
 }
 
 #fence-selection {
@@ -96,4 +96,20 @@ h1 {
     height: 400px;
     margin: 0px 15px 10px 0px;
     border-radius: 15px;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    flex-basis: 62%;
+}
+
+.img-class {
+    flex-basis:38%;
+}
+
+.input-sort {
+    display: flex;
 }
