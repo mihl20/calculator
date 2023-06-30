@@ -1,4 +1,6 @@
 var mainHeading = document.getElementsByClassName('main-header');
+var secondImg = document.getElementById('img-two');
+var picketLabel = document.getElementById('picket-label');
 
 $(document).ready(() => {
     picketButton();
@@ -16,30 +18,38 @@ const picketButton = () => {
     $('#picket').on('click', () => {
         picketChoice();
         screenOneToTwo();
+        secondImg.src = 'C:/Users/mihl/OneDrive/Documents/Projects/FenceCalc/calculator/images/picket.jpg';
+        picketLabel.innerHTML = 'Picket Spacing'
     });
 }
 
 const horizontalButton = () => {
     $('#horizontal').on('click', () => {
         screenOneToTwo();
+        secondImg.src = 'C:/Users/mihl/OneDrive/Documents/Projects/FenceCalc/calculator/images/horizontal.jpg';
+        picketLabel.innerHTML = 'Board Spacing'
     });
+
 }
 
 const verticalButton = () => {
     $('#vertical').on('click', () => {
         screenOneToTwo();
+        secondImg.src = 'C:/Users/mihl/OneDrive/Documents/Projects/FenceCalc/calculator/images/vertical.jpg';
     });
 }
 
 const panelWoodButton = () => {
     $('#panel-wood').on('click', () => {
         screenOneToTwo();
+        secondImg.src = 'C:/Users/mihl/OneDrive/Documents/Projects/FenceCalc/calculator/images/panelwood.jpg';
     });
 }
 
 const panelConcreteButton = () => {
     $('#panel-concrete').on('click', () => {
         screenOneToTwo();
+        secondImg.src = 'C:/Users/mihl/OneDrive/Documents/Projects/FenceCalc/calculator/images/panelconcrete.jpg';
     });
 }
 
@@ -78,5 +88,5 @@ const picketChoice = () => {
 
 const screenOneToTwo = () => {
     $('#first-screen').hide();
-        $('#second-screen').show();
+    $('#second-screen').show();
 }
