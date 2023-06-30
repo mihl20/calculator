@@ -2,17 +2,44 @@ var mainHeading = document.getElementsByClassName('main-header');
 
 $(document).ready(() => {
     picketButton();
+    horizontalButton();
     backButton();
     calculateButton();
     backToStart();
     resetButton();
+    verticalButton();
+    panelWoodButton();
+    panelConcreteButton();
 });
 
 const picketButton = () => {
     $('#picket').on('click', () => {
         picketChoice();
-        $('#first-screen').hide();
-        $('#second-screen').show();
+        screenOneToTwo();
+    });
+}
+
+const horizontalButton = () => {
+    $('#horizontal').on('click', () => {
+        screenOneToTwo();
+    });
+}
+
+const verticalButton = () => {
+    $('#vertical').on('click', () => {
+        screenOneToTwo();
+    });
+}
+
+const panelWoodButton = () => {
+    $('#panel-wood').on('click', () => {
+        screenOneToTwo();
+    });
+}
+
+const panelConcreteButton = () => {
+    $('#panel-concrete').on('click', () => {
+        screenOneToTwo();
     });
 }
 
@@ -47,4 +74,9 @@ const resetButton = () => {
 
 const picketChoice = () => {
     mainHeading.innerHTML = "Picket Fencing"
+}
+
+const screenOneToTwo = () => {
+    $('#first-screen').hide();
+        $('#second-screen').show();
 }

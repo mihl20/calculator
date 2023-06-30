@@ -1,143 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <section class="container" id="first-screen">
-    <div class="header-div">
-      <h1 class="main-header">Fencing Calculator</h1>
-    </div>
-    <h2 id="fence-selection">Please select the type of fence</h2>
-    <div class="inner-container">
-      <div class="content-container">
-        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\picket.jpg" alt="Picket fencing"
-          class="img-size" />
-        <button class="button-size" id="picket">
-          Picket <br />
-          Fencing
-        </button>
+  <body>
+    <section class="container" id="first-screen">
+      <div class="header-div">
+        <h1 class="main-header">Fencing Calculator</h1>
       </div>
-      <div class="content-container">
-        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\horizontal.jpg"
-          alt="Horizontal hit and miss" class="img-size" />
-        <button class="button-size" id="horizontal">Horizontal Hit and Miss</button>
-      </div>
-      <div class="content-container">
-        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\vertical.jpg"
-          alt="Vertical Hit and Miss" class="img-size" />
-        <button class="button-size" id="vertical">Vertical Hit <br />and Miss</button>
-      </div>
-      <div class="content-container">
-        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\panelwood.jpg"
-          alt="Panel Fence With Wood Posts" class="img-size" />
-        <button class="button-size" id="panel-wood">Panel Fence <br /> Wood Posts</button>
-      </div>
-      <div class="content-container">
-        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\panelconcrete.jpg"
-          alt="Panel Fence With Concrete Posts" class="img-size" />
-        <button class="button-size" id="panel-concrete">Panel Fence Concrete Posts</button>
-      </div>
-    </div>
-  </section>
-
-  <!--Second Screen-->
-
-  <section class="container" id="second-screen">
-    <div class="header-div">
-      <h1 class="main-header">Fencing Calculator</h1>
-    </div>
-    <div class="inner-fence-container">
-      <div class="information-container">
-        <h3 id="fence-length">Please enter fence length in meters or feet</h3>
-        <div class="input-sort space-info">
-          <div>
-            <label for="meters" class="color-text">Meters</label>
-            <input type="number" placeholder="meters" name="meters" id="meters" class="input-pad box-sort" />
-          </div>
-          <div>
-            <label for="feet" class="color-text">Feet</label>
-            <input type="number" placeholder="feet" name="feet" id="feet" class="input-pad box-sort" />
-          </div>
+      <h2 id="fence-selection">Please select the type of fence</h2>
+      <div class="inner-container">
+        <div class="content-container">
+          <img
+            src="C:\Users\michael\Documents\Code\Calculator\images\picket.jpg"
+            alt="Picket fencing"
+            class="img-size"
+          />
+          <button class="button-size" id="picket">
+            Picket <br />
+            Fencing
+          </button>
         </div>
-        <div class="input-sort">
-          <div class="space-info">
-            <label for="height" class="color-text">Fence Height</label>
-            <select id="height" class="input-pad select-sort">
-              <option value="3ft">3ft High</option>
-              <option value="4ft">4ft High</option>
-              <option value="6ft">6ft High</option>
-            </select>
-          </div>
-          <div class="space-info">
-            <label for="spacing" class="color-text">Picket Spacing</label>
-            <select id="spacing" class="input-pad select-sort">
-              <option value="5mm">5mm</option>
-              <option value="3/4">3/4"</option>
-            </select>
-          </div>
+        <div class="content-container">
+          <img
+            src="C:\Users\michael\Documents\Code\Calculator\images\horizontal.jpg"
+            alt="Horizontal hit and miss"
+            class="img-size"
+          />
+          <button class="button-size" id="horizontal">
+            Horizontal Hit and Miss
+          </button>
         </div>
-        <div class="btn-div">
-          <input type="button" value="Back" id="back-btn" name="back-btn" class="calculate-btn" />
-          <input type="button" value="Calculate" id="calculate" name="calculate" class="calculate-btn" />
+        <div class="content-container">
+          <img
+            src="C:\Users\michael\Documents\Code\Calculator\images\vertical.jpg"
+            alt="Vertical Hit and Miss"
+            class="img-size"
+          />
+          <button class="button-size" id="vertical">
+            Vertical Hit <br />and Miss
+          </button>
+        </div>
+        <div class="content-container">
+          <img
+            src="C:\Users\michael\Documents\Code\Calculator\images\panelwood.jpg"
+            alt="Panel Fence With Wood Posts"
+            class="img-size"
+          />
+          <button class="button-size" id="panel-wood">
+            Panel Fence <br />
+            Wood Posts
+          </button>
+        </div>
+        <div class="content-container">
+          <img
+            src="C:\Users\michael\Documents\Code\Calculator\images\panelconcrete.jpg"
+            alt="Panel Fence With Concrete Posts"
+            class="img-size"
+          />
+          <button class="button-size" id="panel-concrete">
+            Panel Fence <br />
+            Concrete Posts
+          </button>
         </div>
       </div>
-      <div class="img-class">
-        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\picket.jpg" alt="picket fencing"
-          class="fence-img" id="img-two" />
+    </section>
+
+    <!--Second Screen-->
+
+    <section class="container" id="second-screen">
+      <div class="header-div">
+        <h1 class="main-header">Fencing Calculator</h1>
       </div>
-    </div>
-  </section>
-
-  <!--Third Screen-->
-
-  <section class="container" id="third-screen">
-    <div class="header-div">
-      <h1 class="main-header">Fencing Calculator</h1>
-    </div>
-    <div class="inner-fence-container">
-      <div class="information-container">
-        <p id="output-heading">Based on 3/4" Picket Spacing</p>
-        <div class="outer-output">
-          <div class="inner-output">
-            <p class="p-output" id="picket-output">Number of 3ft x 4" Pickets</p>
-            <span class="span-output">1</span>
+      <div class="inner-fence-container">
+        <div class="information-container">
+          <h3 id="fence-length">Please enter fence length in meters or feet</h3>
+          <div class="input-sort space-info">
+            <div>
+              <label for="meters" class="color-text">Meters</label>
+              <input
+                type="number"
+                placeholder="meters"
+                name="meters"
+                id="meters"
+                class="input-pad box-sort"
+              />
+            </div>
+            <div>
+              <label for="feet" class="color-text">Feet</label>
+              <input
+                type="number"
+                placeholder="feet"
+                name="feet"
+                id="feet"
+                class="input-pad box-sort"
+              />
+            </div>
           </div>
-          <div class="inner-output">
-            <p class="p-output" id="rails">Number of 3.6m D Rails (2 high)</p>
-            <span class="span-output">2</span>
-          </div>
-          <div class="inner-output">
-            <p class="p-output" id="posts">Number of 6ft x 4" x 4" Posts</p>
-            <span class="span-output">3</span>
-          </div>
-          <div class="inner-output">
-            <p class="p-output" id="postcrete">Bags of Postcrete (2 per hole)</p>
-            <span class="span-output">4</span>
+          <div class="input-sort">
+            <div class="space-info">
+              <label for="height" class="color-text">Fence Height</label>
+              <select id="height" class="input-pad select-sort">
+                <option value="3ft">3ft High</option>
+                <option value="4ft">4ft High</option>
+                <option value="6ft">6ft High</option>
+              </select>
+            </div>
+            <div class="space-info">
+              <label for="spacing" class="color-text">Picket Spacing</label>
+              <select id="spacing" class="input-pad select-sort">
+                <option value="5mm">5mm</option>
+                <option value="3/4">3/4"</option>
+              </select>
+            </div>
           </div>
           <div class="btn-div">
-            <input type="button" value="Back To Start" id="back-start" name="back-start"
-              class="calculate-btn third-screen-button" />
-            <input type="button" value="Reset" id="reset-btn" name="reset-btn"
-              class="calculate-btn third-screen-button" />
+            <input
+              type="button"
+              value="Back"
+              id="back-btn"
+              name="back-btn"
+              class="calculate-btn"
+            />
+            <input
+              type="button"
+              value="Calculate"
+              id="calculate"
+              name="calculate"
+              class="calculate-btn"
+            />
           </div>
         </div>
+        <div class="img-class">
+          <img
+            src="C:\Users\michael\Documents\Code\Calculator\images\picket.jpg"
+            alt="picket fencing"
+            class="fence-img"
+            id="img-two"
+          />
+        </div>
       </div>
-      <div class="img-class">
-        <img src="C:\Users\mihl\OneDrive\Documents\Projects\FenceCalc\calculator\images\3ft-picket.png"
-          alt="3ft picket fencing" class="fence-img" id="img-three" />
-      </div>
-    </div>
-  </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="text/javascript" src="app.js"></script>
-</body>
+    </section>
 
+    <!--Third Screen-->
+
+    <section class="container" id="third-screen">
+      <div class="header-div">
+        <h1 class="main-header">Fencing Calculator</h1>
+      </div>
+      <div class="inner-fence-container">
+        <div class="information-container">
+          <p id="output-heading">Based on 3/4" Picket Spacing</p>
+          <div class="outer-output">
+            <div class="inner-output">
+              <p class="p-output" id="picket-output">
+                Number of 3ft x 4" Pickets
+              </p>
+              <span class="span-output">1</span>
+            </div>
+            <div class="inner-output">
+              <p class="p-output" id="rails">Number of 3.6m D Rails (2 high)</p>
+              <span class="span-output">2</span>
+            </div>
+            <div class="inner-output">
+              <p class="p-output" id="posts">Number of 6ft x 4" x 4" Posts</p>
+              <span class="span-output">3</span>
+            </div>
+            <div class="inner-output">
+              <p class="p-output" id="postcrete">
+                Bags of Postcrete (2 per hole)
+              </p>
+              <span class="span-output">4</span>
+            </div>
+            <div class="btn-div">
+              <input
+                type="button"
+                value="Back To Start"
+                id="back-start"
+                name="back-start"
+                class="calculate-btn third-screen-button"
+              />
+              <input
+                type="button"
+                value="Reset Fence"
+                id="reset-btn"
+                name="reset-btn"
+                class="calculate-btn third-screen-button"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="img-class">
+          <img
+            src="C:\Users\michael\Documents\Code\Calculator\images\3ft-picket.png"
+            alt="3ft picket fencing"
+            class="fence-img"
+            id="img-three"
+          />
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
 </html>
