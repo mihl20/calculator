@@ -1,8 +1,8 @@
-var firstHeading = document.getElementById('first-header');
-var secondHeading = document.getElementById('second-header');
-var thirdHeading = document.getElementById('third-header');
-var secondImg = document.getElementById('img-two');
-var picketLabel = document.getElementById('picket-label');
+let firstHeading = document.getElementById('first-header');
+let secondHeading = document.getElementById('second-header');
+let thirdHeading = document.getElementById('third-header');
+let secondImg = document.getElementById('img-two');
+let picketLabel = document.getElementById('picket-label');
 
 $(document).ready(() => {
     picketButton();
@@ -72,6 +72,8 @@ const backButton = () => {
     $('#back-btn').on('click', () => {
         $('#second-screen').hide();
         $('#first-screen').show();
+        $('#feet').val('');
+        $('#meters').val('');
     });
 }
 
@@ -79,6 +81,8 @@ const calculateButton = () => {
     $('#calculate').on('click', () => {
         $('#second-screen').hide();
         $('#third-screen').show();
+        $('#feet').val('');
+        $('#meters').val('');
     });
 }
 

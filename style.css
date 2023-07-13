@@ -81,9 +81,7 @@ h1 {
     opacity: 0.95;
 }
 
-.button-size:active {
-    
-}
+.button-size:active {}
 
 /*Second Screen*/
 
@@ -180,7 +178,7 @@ h1 {
     font-size: 16px;
 }
 
-/*Third page*/
+/*Third screen*/
 
 #third-screen {
     display: none;
@@ -200,7 +198,8 @@ h1 {
     align-items: center;
     width: 400px;
     margin: -7px 0px;
-    padding: 20px 0px;
+    padding: 30px 0px 11px 0px;
+
 }
 
 #output-heading {
@@ -224,5 +223,5 @@ h1 {
 }
 
 .third-screen-button {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
